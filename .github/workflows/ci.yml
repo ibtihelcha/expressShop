@@ -1,0 +1,12 @@
+name: CI
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests"
+      - name: Run tests
+
+        run: |
+          pytest
